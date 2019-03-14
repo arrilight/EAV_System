@@ -6,7 +6,7 @@
 #define EAV_SYSTEM_GPS_H
 
 
-#include "../../../global-interfaces/Coordinates.h"
+#include "../../../common/interfaces/Coordinates.h"
 
 class GPS {
 private:

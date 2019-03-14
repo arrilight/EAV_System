@@ -11,13 +11,11 @@ public:
     double latitude;
 };
 
-
-
 class GPS {
 private:
     CoordinatesInterface coordinates;
 public:
-    CoordinatesInterface getCoordinates(){
+    CoordinatesInterface getCoordinates() {
         return coordinates;
     };
 };

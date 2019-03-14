@@ -16,5 +16,4 @@ public:
     std::string status;
 };
 
-
 #endif //EAV_SYSTEM_CAR_H

@@ -15,6 +15,7 @@ public:
     Coordinates location;
     double currentElectricityLevel;
     std::string status;
+    void move(Coordinates newCoordinates);
 };
 
 #endif //EAV_SYSTEM_CAR_H

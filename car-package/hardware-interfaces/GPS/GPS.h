@@ -5,17 +5,14 @@
 #ifndef EAV_SYSTEM_GPS_H
 #define EAV_SYSTEM_GPS_H
 
-class CoordinatesInterface {
-public:
-    double longitude;
-    double latitude;
-};
+
+#include "../../../global-interfaces/Coordinates.h"
 
 class GPS {
 private:
-    CoordinatesInterface coordinates;
+    Coordinates coordinates;
 public:
-    CoordinatesInterface getCoordinates() {
+    Coordinates getCoordinates() {
         return coordinates;
     };
 };

@@ -6,12 +6,13 @@
 #define EAV_SYSTEM_CAR_H
 
 
-#include "hardware-interfaces/GPS.h"
+#include <string>
+#include "../hardware-interfaces/GPS/GPS.h"
 
 class Car {
 public:
     int id;
-    CoordinatesInterface location;
+    Coordinates location;
     double currentElectricityLevel;
     std::string status;
 };

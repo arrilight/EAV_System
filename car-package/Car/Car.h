@@ -11,16 +11,14 @@
 
 class Car {
 private:
-
-    Coordinates location;
     double currentElectricityLevel;
     std::string status;
 public:
     int id;
-
+    Coordinates location;
     explicit Car(int id);
     void move(Coordinates newCoordinates);
-    void generateRoute(Coordinates startCoordinates, Coordinates endCoordinates);
+    Coordinates* generateRoute();
 };
 
 #endif //EAV_SYSTEM_CAR_H

@@ -23,11 +23,3 @@ std::vector<Car> World::getCars() {
     return cars;
 }
 
-int main() {
-    World world;
-    world.createCar(1);
-    for (const Car &n : world.getCars() ) {
-        std::cout << n.id << '\n';
-    }
-    return 0;
-}

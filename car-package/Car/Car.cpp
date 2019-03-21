@@ -6,15 +6,20 @@
 using namespace std;
 #include "Car.h"
 
+
 Car::Car(int id) {
     cout << "Car is being created" << endl;
     Car::id = id;
+    Coordinates initial_coordinates;
+    location = initial_coordinates;
 }
 
 void Car::move(Coordinates newCoordinates) {
     cout << "Car is being moved" << endl;
 }
 
-void Car::generateRoute(Coordinates startCoordinates, Coordinates endCoordinates) {
+Coordinates* Car::generateRoute() {
     cout << "A root for a car is being created" << endl;
+    auto * result = (Coordinates*) malloc(sizeof(Coordinates) * 2);
+    return result;
 }

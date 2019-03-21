@@ -15,10 +15,11 @@ private:
     std::string status;
 public:
     int id;
+    std::string currentRoute;
     Coordinates location;
     explicit Car(int id);
     void move(Coordinates newCoordinates);
-    Coordinates* generateRoute();
+    std::string generateRoute(int index);
 };
 
 #endif //EAV_SYSTEM_CAR_H

@@ -6,14 +6,17 @@
 #define EAV_SYSTEM_WORLD_H
 
 #include "../../car-package/Car/Car.h"
+#include "../../charging-point-package/ChargingPoint/ChargingPoint.h"
 #include <vector>
 
 class World {
 private:
     std::vector<Car> cars;
+    std::vector<ChargingPoint> points;
+
 public:
-    World();
-    void createStation();
+    World(int numOfCars, int numOfStations);
+    void createPoint(int id);
     void createCar(int id);
     std::vector<Car> getCars();
 };

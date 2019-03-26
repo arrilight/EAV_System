@@ -14,12 +14,12 @@ private:
     double currentElectricityLevel;
     std::string status;
 public:
-    int id;
-    std::string currentRoute;
-    Coordinates location;
     explicit Car(int id);
+    int id;
+    Coordinates location;
+    std::string currentRoute;
     void move(Coordinates newCoordinates);
-    std::string generateRoute(int index);
+    std::string generateRoute();
 };
 
 #endif //EAV_SYSTEM_CAR_H

@@ -11,6 +11,8 @@ private:
     double availableElecrticityLevel;
     double currentPrice;
 public:
+    ChargingStation(int id);
+    int stationId;
     double getAvailableEletcicity();
     double computeCost();
 };

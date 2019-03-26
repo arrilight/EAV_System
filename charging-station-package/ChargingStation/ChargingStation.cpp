@@ -11,3 +11,7 @@ double ChargingStation::getAvailableEletcicity() {
 double ChargingStation::computeCost() {
     return 0;
 }
+
+ChargingStation::ChargingStation(int id) {
+    ChargingStation::stationId = id;
+}

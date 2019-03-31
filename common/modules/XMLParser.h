@@ -6,9 +6,11 @@
 #define EAV_SYSTEM_XMLPARSER_H
 
 
+#include <string>
+
 class XMLParser {
 public:
-
+     void parseRoutes(std::string const & fileName);
 };
 
 

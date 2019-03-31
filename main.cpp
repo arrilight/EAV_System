@@ -1,5 +1,6 @@
 #include <iostream>
 #include "world-package/World/World.h"
+#include "common/modules/XMLParser.h"
 
 int main() {
     World world(2, 2);
@@ -9,5 +10,7 @@ int main() {
         std::cout << "Longitude: " << n.location.longitude << '\n';
         std::cout << "Route: " << n.currentRoute << '\n';
     }
+    XMLParser parser;
+    parser.parseRoutes("test.rou.xml");
     return 0;
 }

@@ -5,15 +5,21 @@
 #ifndef EAV_SYSTEM_CHARGINGSTATION_H
 #define EAV_SYSTEM_CHARGINGSTATION_H
 
+#include <iostream>
+
+using namespace std;
 
 class ChargingStation {
 private:
     double availableElecrticityLevel;
     double currentPrice;
 public:
-    ChargingStation(int id);
+    explicit ChargingStation(int id);
+
     int stationId;
+
     double getAvailableEletcicity();
+
     double computeCost();
 };
 

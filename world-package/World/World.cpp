@@ -21,11 +21,15 @@ World::World(int numOfCars, int numOfPoints) {
     }
 }
 
+void World::createPoint(int id) {
+    points.emplace_back(id);
+}
+
 std::vector<Car> World::getCars() {
     return cars;
 }
 
-void World::createPoint(int id) {
-    points.emplace_back(id);
+std::vector<ChargingPoint> World::getPoints() {
+    return points;
 }
 

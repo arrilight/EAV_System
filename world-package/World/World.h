@@ -13,12 +13,12 @@ class World {
 private:
     std::vector<Car> cars;
     std::vector<ChargingPoint> points;
-
-public:
-    World(int numOfCars, int numOfStations);
     void createPoint(int id);
     void createCar(int id);
+public:
+    World(int numOfCars, int numOfStations);
     std::vector<Car> getCars();
+    std::vector<ChargingPoint> getPoints();
 };
 
 #endif //EAV_SYSTEM_WORLD_H

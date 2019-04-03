@@ -14,4 +14,5 @@ double ChargingStation::computeCost() {
 
 ChargingStation::ChargingStation(int id) {
     ChargingStation::stationId = id;
+    cout << "Creating a charging station with id " << stationId << endl;
 }

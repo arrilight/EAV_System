@@ -9,14 +9,17 @@
 #include <vector>
 #include "../../charging-station-package/ChargingStation/ChargingStation.h"
 
+using namespace std;
+
 class ChargingPoint {
 private:
     std::vector<ChargingStation> stations;
+    void createStation(int id);
+    void generateStations();
 public:
     explicit ChargingPoint(int id);
     int pointId;
-    std::vector<ChargingStation> getStations();
-    void createStation(int id);
+    std::vector<ChargingStation> getStations() const;
 };
 
 

@@ -8,19 +8,19 @@ using namespace std;
 
 
 Car::Car(int id) {
-    cout << "Car is being created" << endl;
     Car::id = id;
+    cout << "Car with id " << id << " is being created" << endl;
     Coordinates initial_coordinates;
     location = initial_coordinates;
     currentRoute = generateRoute();
 }
 
 void Car::move(Coordinates newCoordinates) {
-    cout << "Car is being moved" << endl;
+    cout << "Car " << id << " is being moved" << endl;
 }
 
 string Car::generateRoute() {
-    cout << "A root for a car is being created" << endl;
+    cout << "A root for a car " << id << " is being created" << endl;
     std::string routes[10] = { "86218136#1 567541366 567541365 567541364 567541362 226277888#0 226277888#1 183484459 74711909 298981479 298981481 74711874#0 74711874#1 85135388 386347309 666022498 60863588#0 60863588#1",
                          "386031029#0 386031029#1 55222353#0 55222353#1 -55222353#1",
                          "183484513 183484512#0 183484512#1 183484512#2 183484512#3 183484463#0 183484463#1 183484463#2 -55222353#2 55222353#2 86217916 175850458 175850459 -169822739#3 -169822739#2 -60116792#2 -60116792#1 -60116792#0",

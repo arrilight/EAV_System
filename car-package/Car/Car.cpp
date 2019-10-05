@@ -19,6 +19,11 @@ void Car::move(Coordinates newCoordinates) {
     cout << "Car " << id << " is being moved" << endl;
 }
 
+
+void Car::getNextEdge(int currentEdge) {
+    std::vector<Edge> possibleEdges = nullptr;
+}
+
 string Car::generateRoute() {
     cout << "A root for a car " << id << " is being created" << endl;
     std::string routes[10] = { "86218136#1 567541366 567541365 567541364 567541362 226277888#0 226277888#1 183484459 74711909 298981479 298981481 74711874#0 74711874#1 85135388 386347309 666022498 60863588#0 60863588#1",
@@ -38,3 +43,4 @@ string Car::generateRoute() {
     int index = dis(re);
     return routes[index];
 }
+

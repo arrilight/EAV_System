@@ -11,6 +11,7 @@
 class XMLParser {
 public:
      void parseRoutes(std::string const & fileName);
+     void createFile();
 };
 
 

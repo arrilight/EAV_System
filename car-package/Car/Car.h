@@ -13,6 +13,7 @@ class Car {
 private:
     double currentElectricityLevel;
     std::string status;
+    void getNextEdge(int currentEdge);
 public:
     explicit Car(int id);
     int id;
